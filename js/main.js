@@ -1,4 +1,4 @@
-const correctAnswers = ['A', 'A', 'A', 'A'];
+const correctAnswers = ['B', 'A', 'B', 'A', 'A'];
 const form = document.querySelector('.quiz-form');
 const score_box = document.querySelector('.score-box');
 
@@ -8,12 +8,12 @@ form.addEventListener('submit', e => {
     let score = 0;
 
     // Get user answers
-    const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value];
+    const userAnswers = [form.q1.value, form.q2.value, form.q3.value, form.q4.value, form.q5.value];
 
     // Check user answers
     userAnswers.forEach((answer, index) => {
         if (answer === correctAnswers[index]) {
-            score += 25;
+            score += 20;
         }
     });
 
