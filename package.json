@@ -1,0 +1,22 @@
+{
+  "name": "quizz-app",
+  "version": "1.0.0",
+  "description": "Simple quizz app using HTML, CSS and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustaphaboudouch/quizz-app.git"
+  },
+  "author": "Mustapha Boudouch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mustaphaboudouch/quizz-app/issues"
+  },
+  "homepage": "https://github.com/mustaphaboudouch/quizz-app#readme",
+  "devDependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}
