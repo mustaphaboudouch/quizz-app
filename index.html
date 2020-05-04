@@ -10,13 +10,25 @@
 </head>
 <body>
 
-    <h1 class="result">Score : 0 %</h1>
+    <!-- Header -->
+
+    <div class="header">
+        <h1>Quiz App</h1>
+    </div>
+
+    <!-- Score Box -->
+
+    <div class="score-box d-none">
+        <h1 class="result">Your Score : 0%</h1>
+    </div>
+
+    <!-- Quiz Form -->
 
     <form class="quiz-form container">
 
         <!-- Question -->
         <div class="question">
-            <h2>1. Galileo was an Italian astronomer who developed?</h2>
+            <h2>1. Galileo was an Italian astronomer who developed ?</h2>
             <p>
                 <input type="radio" id="test11" name="q1" value="A">
                 <label for="test11">Telescope</label>
@@ -82,7 +94,8 @@
             </p>
         </div>
 
-        <!-- Submit -->
+        <!-- Submit & Reset Buttons -->
+        <button class="reset" type="reset">Reset</button>
         <button class="submit" type="submit">Submit</button>
     </form>
 

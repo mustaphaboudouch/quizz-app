@@ -1,6 +1,6 @@
 const correctAnswers = ['A', 'A', 'A', 'A'];
 const form = document.querySelector('.quiz-form');
-const result = document.querySelector('.result');
+const score_box = document.querySelector('.score-box');
 
 form.addEventListener('submit', e => {
     e.preventDefault();
@@ -20,10 +20,13 @@ form.addEventListener('submit', e => {
     // Scroll to top
     window.scrollTo(0, 0);
 
+    // Show score box
+    score_box.classList.remove('d-none');
+
     // Score animation
     let output = 0;
     const timer = window.setInterval(() => {
-        result.textContent = `Score : ${output} %`;
+        score_box.querySelector('h1').textContent = `Your Score : ${output}%`;
         if (output == score) {
             clearInterval(timer);
         } else {
